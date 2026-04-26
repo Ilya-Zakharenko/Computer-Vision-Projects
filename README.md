@@ -1,2 +1,2 @@
 # Computer-Vision-Projects
-Computer Vision projects using Convolutional Neural Networks, Object Detection, Segmentation and modern architectures (YOLO, EfficientNet, Vision Transformers).
+Computer Vision and Image Processing projects. Classification, Object Detection, Semantic Segmentation, OCR and other CV tasks using CNNs and Vision Transformers.
