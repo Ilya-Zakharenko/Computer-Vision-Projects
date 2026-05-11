@@ -1,83 +1,41 @@
-![E-commerce Cross-Sell Recommendation](figures/project-header.jpg)
+[Fashion-MNIST Classification](figures/NCJZ9.jpg)
 
-# <center> **PROJECT: E-commerce Cross-Sell Recommendation System**
+# <center> **PROJECT: Fashion-MNIST Classification**
 
-End-to-end recommender system designed to increase **add-on sales (cross-sell)** in an online store.
+Image classification model for recognizing 10 categories of clothing items using Convolutional Neural Network.
 
 ---
 
 ### **Project Goal**
 
-Build an effective recommendation system for suggesting additional products (cross-sell) to users in order to increase average order value.
+Build a robust CNN model to classify images from the Fashion-MNIST dataset — a more challenging drop-in replacement for the original MNIST dataset, closer to real-world retail scenarios.
 
 ---
 
-### **Models Implemented**
+### **Dataset**
 
-- Popularity-based
-- Content-Based Filtering
-- Item-Based Collaborative Filtering
-- Matrix Factorization (SVD)
-- Neural MF
-
----
-
-### **Evaluation Results**
-
-| Model                  | Precision@5 | Recall@5  | nDCG@5   | MAP@5    |
-|------------------------|-------------|-----------|----------|----------|
-| Popularity             | 0.003000    | 0.005640  | 0.006974 | 0.001671 |
-| Content-Based          | 0.000000    | 0.000000  | 0.000000 | 0.000000 |
-| **Item-Based CF**      | **0.061538**| **0.077514** | **0.174900** | **0.051400** |
-| Matrix Factorization   | 0.009877    | 0.007795  | 0.034097 | 0.003640 |
-| Neural MF              | 0.000000    | 0.000000  | 0.000000 | 0.000000 |
+- **Fashion-MNIST**
+- 60,000 training images + 10,000 test images
+- 28×28 grayscale images
+- 10 classes: T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag, Ankle boot
 
 ---
 
-### **Conclusion**
+### **Model Architecture**
 
-Among all tested models, **Item-Based Collaborative Filtering** demonstrated the best performance across all key ranking metrics:
-
-- Highest `Precision@5`
-- Highest `Recall@5`
-- Significantly better `nDCG@5`
-- Best `MAP@5`
-
-This indicates that in this dataset, **behavioral similarity between items** is the strongest signal for recommendations. Users tend to interact with logically related products, and item-item collaborative filtering captures this pattern most effectively.
-
-More complex models, including the neural approach, did not provide improvement due to the high sparsity of the data. In this particular case, a relatively simple classical collaborative model proved to be the most effective solution.
-
----
-
-### **Project Stages**
-1. Basic data analysis
-2. Data preprocessing and cleaning
-3. Exploratory Data Analysis (EDA)
-4. Feature Engineering (Item & User-Item features)
-5. Machine Learning
-6. Model evaluation and comparison
-7. Conclusions
-
----
-
-### **Technologies Used**
-- `pandas`, `numpy`, `scikit-learn`, `scipy`
-- `PyTorch`
-- `matplotlib`, `seaborn`, `plotly`
-
----
-
-### **Project Structure**
-- `notebooks/` — main analysis
-- `src/` — model implementations
-- `data/` — datasets
-- `figures/` — visualizations
-- `requirements.txt`
-
----
-
-### **How to run**
-```bash
-cd E-commerce-Cross-Sell-Recommendation
-pip install -r requirements.txt
-jupyter notebook "PROJECT - E-commerce Cross-Sell Recommendation System.ipynb"
+```python
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ reshape (Reshape)           (None, 28, 28, 1)         0         
+ conv2d (Conv2D)             (None, 26, 26, 32)        320       
+ max_pooling2d (MaxPooling2D) (None, 13, 13, 32)       0         
+ conv2d_1 (Conv2D)           (None, 11, 11, 64)        18496     
+ max_pooling2d_1 (MaxPooling2D) (None, 5, 5, 64)       0         
+ flatten (Flatten)           (None, 1600)              0         
+ dense (Dense)               (None, 128)               204928    
+ dropout (Dropout)           (None, 128)               0         
+ dense_1 (Dense)             (None, 10)                1290      
+=================================================================
+Total params: 225,034 (879.04 KB)
