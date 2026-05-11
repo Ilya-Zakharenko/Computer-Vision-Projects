@@ -6,6 +6,9 @@ Collection of my projects in **Computer Vision** — from classical image proces
 
 ### 📁 Projects
 
+- **[Plankton Classification](Plankton-Classification/)**  
+  Multi-class classification of plankton species using **ResNet18** transfer learning on a small and highly imbalanced dataset. Best result: **F1-macro = 0.8667** with head-only fine-tuning.
+
 - **[English Letters CAPTCHA Recognition](English-Letters-CAPTCHA-Recognition/)**  
   CNN model for recognizing distorted and noisy English letters (A–Z). Achieved **90.03%** validation accuracy.
 
