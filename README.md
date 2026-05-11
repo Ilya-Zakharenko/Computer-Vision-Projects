@@ -6,7 +6,7 @@ Collection of my projects in **Computer Vision** — from classical image proces
 
 ### 📁 Projects
 
-- **[Fashion-MNIST Classification](Fashion-MNIST-Classification/)**  
+- **[Fashion-MNIST Classification](FashionMNIST-Image-Classification/)**  
   Image classification model for recognizing 10 categories of clothing using a custom CNN architecture. Achieved **88.97%** validation accuracy on the Fashion-MNIST dataset.
 
 
