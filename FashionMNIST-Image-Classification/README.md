@@ -1,4 +1,6 @@
-[Fashion-MNIST Classification](figures/NCJZ9.jpg)
+<div align="center">
+  <img src="figures/NCJZ9.jpg" width="100%" alt="Fashion-MNIST Classification">
+</div>
 
 # <center> **PROJECT: Fashion-MNIST Classification**
 
