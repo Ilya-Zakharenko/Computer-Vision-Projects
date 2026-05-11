@@ -1,0 +1,70 @@
+# =========================
+# macOS
+# =========================
+.DS_Store
+**/.DS_Store
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.env
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Data
+# =========================
+data/
+datasets/
+**/data/
+**/datasets/
+
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.npz
+
+# =========================
+# Deep Learning Weights
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.pb
+*.weights
+
+# =========================
+# Logs & checkpoints
+# =========================
+logs/
+checkpoints/
+wandb/
+mlruns/
+tensorboard/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# Docker
+# =========================
+*.tar
+
+# =========================
+# System files
+# =========================
+Thumbs.db
