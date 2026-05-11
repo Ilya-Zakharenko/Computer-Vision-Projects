@@ -6,6 +6,9 @@ Collection of my projects in **Computer Vision** — from classical image proces
 
 ### 📁 Projects
 
+- **[English Letters CAPTCHA Recognition](English-Letters-CAPTCHA-Recognition/)**  
+  CNN model for recognizing distorted and noisy English letters (A–Z). Achieved **90.03%** validation accuracy.
+
 - **[Fashion-MNIST Classification](FashionMNIST-Image-Classification/)**  
   Image classification model for recognizing 10 categories of clothing using a custom CNN architecture. Achieved **88.97%** validation accuracy on the Fashion-MNIST dataset.
 
