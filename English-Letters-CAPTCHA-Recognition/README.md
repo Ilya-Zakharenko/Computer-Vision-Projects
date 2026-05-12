@@ -1,10 +1,12 @@
-<div align="center">
-  <img src="figures/t2KeP.jpg" width="100%" alt="English Letters CAPTCHA Recognition">
-</div>
-
 # <center> **PROJECT: English Letters CAPTCHA Recognition**
 
 Convolutional Neural Network for recognizing distorted and noisy images of English alphabet letters (A–Z).
+
+---
+
+<div align="center">
+  <img src="figures/t2KeP.jpg" width="100%" alt="English Letters CAPTCHA Recognition">
+</div>
 
 ---
 

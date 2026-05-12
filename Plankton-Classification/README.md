@@ -1,11 +1,13 @@
-<div align="center">
-  <img src="figures/EB9Ez.jpg" width="100%" alt="Plankton Classification">
-</div>
-
 # <center> **PROJECT: Plankton Classification**  
 ResNet18 Transfer Learning on Small Imbalanced Dataset
 
 Image classification of plankton species using transfer learning on a highly imbalanced and limited dataset.
+
+---
+
+<div align="center">
+  <img src="figures/EB9Ez.jpg" width="100%" alt="Plankton Classification">
+</div>
 
 ---
 

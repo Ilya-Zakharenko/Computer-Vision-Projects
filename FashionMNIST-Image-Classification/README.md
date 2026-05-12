@@ -1,10 +1,12 @@
-<div align="center">
-  <img src="figures/NCJZ9.jpg" width="100%" alt="Fashion-MNIST Classification">
-</div>
-
 # <center> **PROJECT: Fashion-MNIST Classification**
 
 Image classification model for recognizing 10 categories of clothing items using Convolutional Neural Network.
+
+---
+
+<div align="center">
+  <img src="figures/NCJZ9.jpg" width="100%" alt="Fashion-MNIST Classification">
+</div>
 
 ---
 
